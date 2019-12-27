@@ -1,6 +1,28 @@
-array_1 = [['pepperoni', 'sausage'], ['green olives', 'green peppers'], ['onions', 'pineapple']]
-array_2 = [[-1, -900], [10, 30], [0, 0], [14, 16 * -2.5], [Math.sin(1), 19]]
-array_3 = [[86262, 58115], [22558, 97709], [66236, 28056], [25992, 81375], [11248, 56789], [42783, 27353], [70796, 63432], [53234, 63058], [72316, 8675309]]
+array_1 = [
+  ['pepperoni', 'sausage'],
+  ['green olives', 'green peppers'],
+  ['onions', 'pineapple']
+  ]
+
+array_2 = [
+  [-1, -900],
+  [10, 30],
+  [0, 0],
+  [14, 16 * -2.5],
+  [Math.sin(1), 19]
+  ]
+
+array_3 = [
+  [86262, 58115],
+  [22558, 97709],
+  [66236, 28056],
+  [25992, 81375],
+  [11248, 56789],
+  [42783, 27353],
+  [70796, 63432],
+  [53234, 63058],
+  [72316, 8675309]
+  ]
 
 
 
@@ -12,14 +34,22 @@ def join_ingredients(src)
   #
   # "I love (inner array element 0) and (inner array element 1) on my pizza""
   # As such, there should be a new String for each inner array, or pair
-  puts "I love #{array_1[1][1]}"
+
 end
 
 def find_greater_pair(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
-end
+
+      if row_index > element_index
+        puts row_index
+        row_index += 1
+      else
+        puts element_index
+        element_index += 1
+      end
+
 
 def total_even_pairs(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
